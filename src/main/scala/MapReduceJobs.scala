@@ -25,7 +25,7 @@ object MapReduceJobs {
         "org.apache.hadoop.io.serializer.WritableSerialization")
 
 
-    /*logger.info("Starting first job")
+    logger.info("Starting first job")
     val job1 = Job.getInstance(configuration, "Number of sub-authors for each author")
     val output_second = new Path(args(1) + "Number of sub-authors for each author")
     job1.setJarByClass(this.getClass)
@@ -153,7 +153,7 @@ object MapReduceJobs {
 
     FileInputFormat.addInputPath(job7, new Path(args(0)))
     FileOutputFormat.setOutputPath(job7, new Path(args(1) + "TopTenAuthor"))
-    job7.waitForCompletion(true)*/
+    job7.waitForCompletion(true)
 
     logger.info("Starting eighth job")
     val job8 = Job.getInstance(configuration, "HighestNumberofAuthorVenue")
