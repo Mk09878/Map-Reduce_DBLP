@@ -226,7 +226,6 @@ algorithmic oper. res.,ralf klasing;santosh n. kabadi;katta g. murty;vangelis th
 am. j. comput. math.,nong pan;faheem khan;manisha patel;ranjan kumar mohanty;takayuki fujii;a. romkes;yuki kawahara;n. m. bujurke;xuzhou chen;ailin qian
 ann. oper. res.,michel gendreau;liang liang 0001;laureano f. escudero;gilbert laporte;edmund k. burke;panos m. pardalos;zvi drezner;silvano martello;herwig bruneel;fred w. glover
 ann. umcs informatica,elzbieta smolka;pawel mikolajczak;miroslaw hajder;wieslawa kuniszyk-józkowiak;pawel dymora;zbigniew kotulski;waldemar suszynski;krzysztof sapiecha;vasyl ustimenko;miroslaw mazurek
-
 .
 .
 .
@@ -253,7 +252,14 @@ The output format is (venue,publication1;publication2;....;publicationN)
 The output snippet looks as follows:
 
 ```
-
+advanced topics in computer vision,learning object detectors in stationary environments.;co-recognition of images and videos: unsupervised matching of identical object patterns and its applications.;moment constraints in convex optimization for segmentation and tracking.;evaluating and extending trajectory features for activity recognition.;boosting k-nearest neighbors classification.;recognizing human actions by using effective codebooks and tracking.;large scale metric learning for distance-based image classification on open ended data sets.;video temporal super-resolution based on self-similarity.
+advances and applications in sliding mode control systems,robust control of robot arms via quasi sliding modes and neural networks.;optimal sliding and decoupled sliding mode tracking control by multi-objective particle swarm optimization and genetic algorithms.
+advances in applied self-organizing systems,a self-organizing sensing system for structural health monitoring of aerospace vehicles.
+advances in biologically inspired information systems,context data dissemination in the bio-inspired service life cycle.
+advances in chaos theory and intelligent control,a novel design approach of a nonlinear resistor based on a memristor emulator.
+.
+.
+.
 ```
 
 ## Deployment and Running on AWS 
