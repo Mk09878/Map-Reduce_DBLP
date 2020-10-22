@@ -2,6 +2,11 @@
 
 ## Description: Designed and implemented an instance of the map/reduce computational model on the DBLP Dataset.
 
+## Important
+
+There are two files: input.xml and Hello.scala which do not contain anything relevant to the project.
+However, they should not be removed. Removing those will lead to issues in the execution of the code.
+
 ## Steps to run the project
 1. Clone the repository using the following command: 
 ```git clone https://MihirK3@bitbucket.org/cs441-fall2020/mihir_kelkar_hw2.git```
