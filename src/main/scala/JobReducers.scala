@@ -145,15 +145,18 @@ class HighestNumberofAuthorVenueReducer extends Reducer[Text, Text, Text, Text]{
 
   override def reduce(key: Text, values: lang.Iterable[Text], context: Reducer[Text, Text, Text, Text]#Context): Unit = {
     try {
-      val tmap: mutable.TreeMap[Int, String] = new mutable.TreeMap[Int, String]()(implicitly[Ordering[Int]].reverse)
+      val tmap: mutable.TreeMap[Int, String] = new mutable.TreeMap[Int, String]()(Ordering[Int].reverse)
 
       val pattern = """thead:(.+):>AuthCnt:(\d+)""".r
+
       values.forEach(tuple => {
         val pattern(t, a) = tuple.toString
-        if (tmap.contains(a.toInt))
-          tmap.put(a.toInt, tmap(a.toInt) + ";" + t)
+        val key = a.toInt
+        val value = t
+        if (tmap.contains(key))
+          tmap.put(key, tmap(key) + ";" + value)
         else
-          tmap.put(a.toInt, t)
+          tmap.put(key, value)
       })
       context.write(key, new Text(tmap(tmap.firstKey)))
     }
