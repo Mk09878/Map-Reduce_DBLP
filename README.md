@@ -164,6 +164,9 @@ The output snippet looks as follows:
 25 years of model checking,the beginning of model checking: a personal perspective. | model checking: from tools to theory. | a retrospective on murphi. | verification technology transfer. | the birth of model checking. | fifteen years of formal property verification in intel. | from church and prior to psl. | a view from the engine room: computational support for symbolic model checking. |  | 
 25th anniversary of inria,digital hdtv: a technical challenge. | coordinating vehicles in an automated highway. | opportunities and challenges in signal processing and analysis. | formal theories and software systems: fundamental connections between computer science and logic. | technology, networks, and the library of the year 2000. | dependable parallel computing by randomization (abstract). | what is knowledge representation, and where is it going? | new frontiers in database system research. | differential-geometric methods: a powerful set of new tools for optimal control. | sensing robots. | creating a design science of human-computer interaction. | stochastic control and large deviations. | autonomous control. | neural computing and stochastic optimization. | fundamentals of bicentric perspective. | system dependability. | analog and digital computing. | mosaic c: an experimental fine-grain multicomputer. | world mathematical year 2000 and computer sciences. |  | 
 35 years of fuzzy set theory,on lattice-based fuzzy rough sets. | on the intuitionistic fuzzy implications and negations. part 1. |  |
+.
+.
+.
 ```
 
 #### List of authors who published without interruption for N years, where 10 <= N.
