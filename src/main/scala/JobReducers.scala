@@ -12,8 +12,8 @@ import scala.collection.mutable.ListBuffer
 import scala.jdk.CollectionConverters._
 
 /**
- * The reducer combines all the authors for each venue into a list and then creates a hashmap with key as author and value as the number of publications for that venue.
- * Now, the key with the highest value is found out from the hashmap, the entry is removed, and the author name is added to a list. This process is repeated 10 times or till the map is empty.
+ * The reducer combines all the authors for each venue into a list.
+ * The groupby and the sortBy function is applied on the list to get the top 10 frequent authors in the  authors_list on which map is used to get the author names.
  * Now, the reducer outputs the key as venue, and a string conversion of the top ten author list as value.
  * The output format is (venue,author1;author2;author3;....;author10)
  */
@@ -136,10 +136,9 @@ class NYearsWithoutInterruptReducer extends Reducer[Text, Text, Text, Text]{
 }
 
 /**
- * The reducer combines all the authors for each venue into a list.
- * The groupby and the sortBy function is applied on the list to get the top 10 frequent authors in the  authors_list on which map is used to get the author names.
- * Now, the reducer outputs the key as venue, and a string conversion of the top ten author list as value.
- * The output format is (venue,author1;author2;author3;....;author10)
+ * The reducer creates a TreeMap with key as the number of authors for that publication and value as the publication titles.
+ * The reducer then outputs the key as venue and the value as the highest entry(value of the entry) from the TreeMap.
+ * The output format is (venue,publication1;publication2;....;publicationN)
  */
 class HighestNumberofAuthorVenueReducer extends Reducer[Text, Text, Text, Text]{
   val logger: Logger = LoggerFactory.getLogger(this.getClass)
